@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Extension</title>
+    <title>Page Source Viewer</title>
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <h3>My Chrome Extension</h3>
-    <button id="doAction">Do Action</button>
-
+    <div class="container">
+        <h1>Page Source Viewer</h1>
+        <div class="status" id="status"></div>
+        <pre class="source-code" id="sourceCode"></pre>
+    </div>
     <script src="popup.js"></script>
 </body>
 </html>

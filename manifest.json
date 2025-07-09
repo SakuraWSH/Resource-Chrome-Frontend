@@ -1,8 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "Resoure-Chrome-Frontend",
+    "name": "Resource-Chrome-Frontend",
     "version": "1.0.0",
-    "description": "A basic Chrome extension template",
+    "description": "View the source code of the current page",
+    "permissions": ["activeTab", "scripting"],
     "action": {
         "default_popup": "popup/popup.html",
         "default_icon": {
@@ -11,24 +12,8 @@
             "128": "icons/icon128.png"
         }
     },
-    "permissions": [
-        "activeTab",
-        "scripting"
-    ],
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["content.js"]
-        }
-    ],
     "background": {
         "service_worker": "background.js"
-    },
-    "web_accessible_resources": [
-        {
-            "resources": ["icons/*.png"],
-            "matches": []
-        }
-    ]
+    }
 }
     
