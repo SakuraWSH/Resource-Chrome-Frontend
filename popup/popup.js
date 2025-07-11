@@ -58,7 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // sourceCode = mergeNestedTagsKeepInnermost(sourceCode);
 
                 sourceCodeElement.textContent = sourceCode;
-
+                const resourceUrlInput = document.getElementById('resourceurl');
+                resourceUrlInput.value = tab.url;
                 status.textContent = `Loaded ${sourceCode.length} characters`;
                 status.className = 'status success';
             } else {
@@ -169,4 +170,46 @@ document.addEventListener('DOMContentLoaded', function() {
         result += html.substring(lastIndex);
         return result;
     }
+    // 处理下载按钮点击事件
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.addEventListener('click', function() {
+        const identifier = document.getElementById('identifier').value || null;
+        const name = document.getElementById('name').value || null;
+        const description = document.getElementById('description').value || null;
+        const keyword = document.getElementById('keyword').value || null;
+        const dataofcreate = document.getElementById('dataofcreate').value || null;
+        const dataoflast = document.getElementById('dataoflast').value || null;
+        const resourceurl = document.getElementById('resourceurl').value || null;
+        const resourceauthor = document.getElementById('resourceauthor').value || null;
+        const resourceorginazation = document.getElementById('resourceorginazation').value || null;
+        const authoremail = document.getElementById('authoremail').value || null;
+        const journal = document.getElementById('journal').value || null;
+        const sourceCode = sourceCodeElement.textContent;
+
+        const data = {
+            identifier,
+            name,
+            description,
+            keyword,
+            dataofcreate,
+            dataoflast,
+            resourceurl,
+            resourceauthor,
+            resourceorginazation,
+            authoremail,
+            journal,
+            sourceCode
+        };
+
+        const jsonData = JSON.stringify(data, null, 2);
+        const blob = new Blob([jsonData], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'page_info.json';
+        a.click();
+
+        URL.revokeObjectURL(url);
+    });
 });
