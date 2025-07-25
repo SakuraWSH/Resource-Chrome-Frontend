@@ -340,3 +340,46 @@ h1 {
     font-size: 12px;        /* 缩小按钮字体 */
     margin-top: 4px;
 }
+
+/* 状态图标样式 */
+.status-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    color: white;
+}
+
+.status-question {
+    background-color: #4d90fe; /* 蓝色问号 */
+}
+
+.status-check {
+    background-color: #188038; /* 绿色对号 */
+}
+
+.status-cross {
+    background-color: #d93025; /* 红色叉号 */
+}
+
+/* 图标说明样式 */
+.icon-legend {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    margin: 16px 0;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}

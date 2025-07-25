@@ -26,357 +26,640 @@
             
             <!-- 核心元数据部分 -->
             <div class="metadata-section" id="coreMetadata">
+                <!-- 图标说明区域 -->
+                <div class="icon-legend">
+                    <div class="legend-item">
+                        <span class="status-icon status-check">✓</span>
+                        <span>验证通过</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="status-icon status-cross">✗</span>
+                        <span>验证失败</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="status-icon status-question">?</span>
+                        <span>待验证</span>
+                    </div>
+                </div>
                 <!-- 基础核心元数据 -->
+                 
                 <div class="form-row">
                     <label for="identifier">标识符:</label>
-                    <input type="text" id="identifier" placeholder="科技资源的唯一标识编码">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="identifier" placeholder="科技资源的唯一标识编码">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="name">资源名称:</label>
-                    <input type="text" id="name" placeholder="科技资源的名称">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="name" placeholder="科技资源的名称">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="description">描述:</label>
-                    <input type="text" id="description" placeholder="科技资源内容的概要介绍">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="description" placeholder="科技资源内容的概要介绍">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="keyword">关键词:</label>
-                    <input type="text" id="keyword" placeholder="科技资源的关键词">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="keyword" placeholder="科技资源的关键词">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="dataofcreate">生成日期:</label>
-                    <input type="text" id="dataofcreate" placeholder="科技资源的生成日期">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="dataofcreate" placeholder="科技资源的生成日期">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="dateregister">注册日期:</label>
-                    <input type="text" id="dateregister" placeholder="科技资源的获得标识符的日期">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="dateregister" placeholder="科技资源的获得标识符的日期">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="dataoflast">最新发布日期:</label>
-                    <input type="text" id="dataoflast" placeholder="最近一次发布更新的日期">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="dataoflast" placeholder="最近一次发布更新的日期">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="discipline">学科分类:</label>
-                    <input type="text" id="discipline" placeholder="科技资源所属的学科分类">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="discipline" placeholder="科技资源所属的学科分类">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="theme">主题分类:</label>
-                    <input type="text" id="theme" placeholder="科技资源的领域来源应用分类">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="theme" placeholder="科技资源的领域来源应用分类">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="ipcategory">知识产权类别:</label>
-                    <input type="text" id="ipcategory" placeholder="完全知识产权/他人知识产权等">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="ipcategory" placeholder="完全知识产权/他人知识产权等">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="permission">资源使用许可:</label>
-                    <input type="text" id="permission" placeholder="转让/传播/署名/修改等">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="permission" placeholder="转让/传播/署名/修改等">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="resourceurl">资源访问地址:</label>
-                    <input type="text" id="resourceurl" placeholder="科技资源的网络访问地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="resourceurl" placeholder="科技资源的网络访问地址">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 
                 <!-- 共享方式 -->
                 <div class="form-row section-title">共享方式</div>
                 <div class="form-row">
                     <label for="sharemethod">共享途径:</label>
-                    <input type="text" id="sharemethod" placeholder="线上共享/线下共享/线上线下共享">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="sharemethod" placeholder="线上共享/线下共享/线上线下共享">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="sharerange">共享范围:</label>
-                    <input type="text" id="sharerange" placeholder="不共享/有条件共享/无条件共享">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="sharerange" placeholder="不共享/有条件共享/无条件共享">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="applyprocess">申请流程:</label>
-                    <input type="text" id="applyprocess" placeholder="获取资源的必备程序">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="applyprocess" placeholder="获取资源的必备程序">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
 
                 <!-- 提供方信息 -->
                 <div class="form-row section-title">提供方信息</div>
                 <div class="form-row">
                     <label for="provider">提供方名称:</label>
-                    <input type="text" id="provider" placeholder="提供科技资源的组织名称">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="provider" placeholder="提供科技资源的组织名称">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="provideraddr">详细地址:</label>
-                    <input type="text" id="provideraddr" placeholder="提供方的详细联系地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="provideraddr" placeholder="提供方的详细联系地址">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="providerzip">邮政编码:</label>
-                    <input type="text" id="providerzip" placeholder="与通信地址对应的邮政编码">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="providerzip" placeholder="与通信地址对应的邮政编码">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="providercontact">联系人:</label>
-                    <input type="text" id="providercontact" placeholder="提供方的联系人姓名">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="providercontact" placeholder="提供方的联系人姓名">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="providertel">联系电话:</label>
-                    <input type="text" id="providertel" placeholder="提供方的联系电话">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="providertel" placeholder="提供方的联系电话">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="provideremail">电子邮箱:</label>
-                    <input type="text" id="provideremail" placeholder="提供方的电子邮箱地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="provideremail" placeholder="提供方的电子邮箱地址">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="providerwebsite">网站:</label>
-                    <input type="text" id="providerwebsite" placeholder="提供方的官方网站地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="providerwebsite" placeholder="提供方的官方网站地址">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
 
                 <!-- 服务方信息 -->
                 <div class="form-row section-title">服务方信息</div>
                 <div class="form-row">
                     <label for="server">服务方名称:</label>
-                    <input type="text" id="server" placeholder="服务方的组织名称">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="server" placeholder="服务方的组织名称">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="serveraddr">详细地址:</label>
-                    <input type="text" id="serveraddr" placeholder="服务方的详细联系地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="serveraddr" placeholder="服务方的详细联系地址">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="serverzip">邮政编码:</label>
-                    <input type="text" id="serverzip" placeholder="与通信地址对应的邮政编码">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="serverzip" placeholder="与通信地址对应的邮政编码">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="servercontact">联系人:</label>
-                    <input type="text" id="servercontact" placeholder="服务方的联系人姓名">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="servercontact" placeholder="服务方的联系人姓名">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="servertel">联系电话:</label>
-                    <input type="text" id="servertel" placeholder="服务方的联系电话">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="servertel" placeholder="服务方的联系电话">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="serveremail">电子邮箱:</label>
-                    <input type="text" id="serveremail" placeholder="服务方的电子邮箱地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="serveremail" placeholder="服务方的电子邮箱地址">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="serverwebsite">网站:</label>
-                    <input type="text" id="serverwebsite" placeholder="服务方的官方网站地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="serverwebsite" placeholder="服务方的官方网站地址">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
+
+                
             </div>
             
             <!-- 数据集元数据部分 -->
             <div class="metadata-section" id="datasetMetadata" style="display: none;">
+                <!-- 图标说明区域 -->
+                <div class="icon-legend">
+                    <div class="legend-item">
+                        <span class="status-icon status-check">✓</span>
+                        <span>验证通过</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="status-icon status-cross">✗</span>
+                        <span>验证失败</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="status-icon status-question">?</span>
+                        <span>待验证</span>
+                    </div>
+                </div>
                 <!-- 继承核心元数据 -->
                 <div class="form-row section-title">核心元数据</div>
                 <div class="form-row">
                     <label for="dataset_identifier">标识符:</label>
-                    <input type="text" id="dataset_identifier" placeholder="数据集的唯一标识编码">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="dataset_identifier" placeholder="数据集的唯一标识编码">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="dataset_title">标题:</label>
-                    <input type="text" id="dataset_title" placeholder="数据集公开的标题">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="dataset_title" placeholder="数据集公开的标题">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="dataset_abstract">摘要:</label>
-                    <input type="text" id="dataset_abstract" placeholder="数据集的简要介绍">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="dataset_abstract" placeholder="数据集的简要介绍">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="dataset_keyword">关键词:</label>
-                    <input type="text" id="dataset_keyword" placeholder="数据集的关键词">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="dataset_keyword" placeholder="数据集的关键词">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 
                 <!-- 数据集特有信息 -->
                 <div class="form-row section-title">范围信息</div>
                 <div class="form-row">
                     <label for="time_range">时间范围:</label>
-                    <input type="text" id="time_range" placeholder="数据集的时间范围">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="time_range" placeholder="数据集的时间范围">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="space_range">空间范围:</label>
-                    <input type="text" id="space_range" placeholder="数据集的空间范围">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="space_range" placeholder="数据集的空间范围">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 
                 <div class="form-row section-title">基本信息</div>
                 <div class="form-row">
                     <label for="language">语种:</label>
-                    <input type="text" id="language" placeholder="数据集的描述语言">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="language" placeholder="数据集的描述语言">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="file_content">文件内容:</label>
-                    <input type="text" id="file_content" placeholder="数据集包括的文件数和具体文件内容">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="file_content" placeholder="数据集包括的文件数和具体文件内容">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="fund_project">基金项目:</label>
-                    <input type="text" id="fund_project" placeholder="数据集的项目或基金支持">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="fund_project" placeholder="数据集的项目或基金支持">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="data_volume">数据量:</label>
-                    <input type="text" id="data_volume" placeholder="数据集所占的物理存储空间大小">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="data_volume" placeholder="数据集所占的物理存储空间大小">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="data_format">数据格式:</label>
-                    <input type="text" id="data_format" placeholder="数据集的文件格式">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="data_format" placeholder="数据集的文件格式">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 
                 <div class="form-row section-title">数据集作者</div>
                 <div class="form-row">
                     <label for="author_name">作者姓名:</label>
-                    <input type="text" id="author_name" placeholder="数据集的作者姓名">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="author_name" placeholder="数据集的作者姓名">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="work_unit">工作单位:</label>
-                    <input type="text" id="work_unit" placeholder="数据集作者所属单位">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="work_unit" placeholder="数据集作者所属单位">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="author_email">电子邮箱:</label>
-                    <input type="text" id="author_email" placeholder="数据集作者的电子邮箱地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="author_email" placeholder="数据集作者的电子邮箱地址">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="work_contribution">工作贡献:</label>
-                    <input type="text" id="work_contribution" placeholder="数据集作者的工作贡献">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="work_contribution" placeholder="数据集作者的工作贡献">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="author_bio">作者简介:</label>
-                    <input type="text" id="author_bio" placeholder="数据集作者的简要介绍">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="author_bio" placeholder="数据集作者的简要介绍">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 
                 <div class="form-row section-title">出版信息</div>
                 <div class="form-row">
                     <label for="publish_date">发布日期:</label>
-                    <input type="text" id="publish_date" placeholder="数据集公开发布的时间">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="publish_date" placeholder="数据集公开发布的时间">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="publish_journal">出版期刊:</label>
-                    <input type="text" id="publish_journal" placeholder="数据集关联出版的数据期刊名称">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="publish_journal" placeholder="数据集关联出版的数据期刊名称">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="version_info">版本信息:</label>
-                    <input type="text" id="version_info" placeholder="数据集的版本信息">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="version_info" placeholder="数据集的版本信息">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 
                 <div class="form-row section-title">服务信息</div>
                 <div class="form-row">
                     <label for="citation_format">引用格式:</label>
-                    <input type="text" id="citation_format" placeholder="数据集的引用格式">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="citation_format" placeholder="数据集的引用格式">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="license_agreement">共享许可协议:</label>
-                    <input type="text" id="license_agreement" placeholder="数据集的共享许可协议">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="license_agreement" placeholder="数据集的共享许可协议">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="usage_statement">使用声明:</label>
-                    <input type="text" id="usage_statement" placeholder="数据集使用遵循的规则">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="usage_statement" placeholder="数据集使用遵循的规则">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="download_url">下载地址:</label>
-                    <input type="text" id="download_url" placeholder="数据集在互联网的下载地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="download_url" placeholder="数据集在互联网的下载地址">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_url">数据论文访问地址:</label>
-                    <input type="text" id="paper_url" placeholder="以数据集为核心出版的论文的访问地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_url" placeholder="以数据集为核心出版的论文的访问地址">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
+
+                
             </div>
             
             <!-- 数据论文元数据部分 -->
             <div class="metadata-section" id="paperMetadata" style="display: none;">
+                <!-- 图标说明区域 -->
+                <div class="icon-legend">
+                    <div class="legend-item">
+                        <span class="status-icon status-check">✓</span>
+                        <span>验证通过</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="status-icon status-cross">✗</span>
+                        <span>验证失败</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="status-icon status-question">?</span>
+                        <span>待验证</span>
+                    </div>
+                </div>
                 <div class="form-row section-title">数据论文内容信息</div>
                 <div class="form-row">
                     <label for="paper_identifier">标识符:</label>
-                    <input type="text" id="paper_identifier" placeholder="数据论文的唯一标识编码">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_identifier" placeholder="数据论文的唯一标识编码">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_title">标题:</label>
-                    <input type="text" id="paper_title" placeholder="数据论文的标题">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_title" placeholder="数据论文的标题">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_abstract">摘要:</label>
-                    <input type="text" id="paper_abstract" placeholder="数据论文的简要介绍">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_abstract" placeholder="数据论文的简要介绍">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_keyword">关键词:</label>
-                    <input type="text" id="paper_keyword" placeholder="数据论文的关键词">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_keyword" placeholder="数据论文的关键词">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 
                 <!-- 包含数据集基本信息 -->
                 <div class="form-row section-title">关联数据集信息</div>
                 <div class="form-row">
                     <label for="related_dataset_id">数据集标识符:</label>
-                    <input type="text" id="related_dataset_id" placeholder="关联数据集的唯一标识编码">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="related_dataset_id" placeholder="关联数据集的唯一标识编码">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="related_dataset_title">数据集标题:</label>
-                    <input type="text" id="related_dataset_title" placeholder="关联数据集的公开标题">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="related_dataset_title" placeholder="关联数据集的公开标题">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 
                 <div class="form-row section-title">论文内容</div>
                 <div class="form-row">
                     <label for="introduction">引言:</label>
-                    <input type="text" id="introduction" placeholder="数据论文的引言部分">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="introduction" placeholder="数据论文的引言部分">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="methodology">数据采集和处理方法:</label>
-                    <input type="text" id="methodology" placeholder="数据论文的数据采集和处理方法">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="methodology" placeholder="数据论文的数据采集和处理方法">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="sample_desc">数据样本描述:</label>
-                    <input type="text" id="sample_desc" placeholder="描述数据集的典型样本来源数据结构等">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="sample_desc" placeholder="描述数据集的典型样本来源数据结构等">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="quality_control">数据质量控制:</label>
-                    <input type="text" id="quality_control" placeholder="数据质量控制方法和验证过程">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="quality_control" placeholder="数据质量控制方法和验证过程">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="usage_suggestion">数据使用方法建议:</label>
-                    <input type="text" id="usage_suggestion" placeholder="数据集的使用方法和建议">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="usage_suggestion" placeholder="数据集的使用方法和建议">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="references">参考文献:</label>
-                    <input type="text" id="references" placeholder="数据论文引用的参考文献列表">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="references" placeholder="数据论文引用的参考文献列表">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="acknowledgements">致谢:</label>
-                    <input type="text" id="acknowledgements" placeholder="数据论文的致谢部分">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="acknowledgements" placeholder="数据论文的致谢部分">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 
                 <div class="form-row section-title">数据论文作者</div>
                 <div class="form-row">
                     <label for="paper_author_name">作者姓名:</label>
-                    <input type="text" id="paper_author_name" placeholder="数据论文作者的姓名">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_author_name" placeholder="数据论文作者的姓名">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_author_unit">工作单位:</label>
-                    <input type="text" id="paper_author_unit" placeholder="数据论文作者所属单位">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_author_unit" placeholder="数据论文作者所属单位">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_author_email">电子邮箱:</label>
-                    <input type="text" id="paper_author_email" placeholder="数据论文作者的电子邮箱地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_author_email" placeholder="数据论文作者的电子邮箱地址">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 
                 <div class="form-row section-title">出版信息</div>
                 <div class="form-row">
                     <label for="receive_date">收稿日期:</label>
-                    <input type="text" id="receive_date" placeholder="数据论文的收稿日期">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="receive_date" placeholder="数据论文的收稿日期">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="review_date">同评日期:</label>
-                    <input type="text" id="review_date" placeholder="数据论文的同行评审日期">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="review_date" placeholder="数据论文的同行评审日期">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="accept_date">录用日期:</label>
-                    <input type="text" id="accept_date" placeholder="数据论文的录用日期">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="accept_date" placeholder="数据论文的录用日期">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_publish_date">出版日期:</label>
-                    <input type="text" id="paper_publish_date" placeholder="数据论文的出版日期">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_publish_date" placeholder="数据论文的出版日期">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_journal">出版期刊:</label>
-                    <input type="text" id="paper_journal" placeholder="数据论文出版期刊名称">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_journal" placeholder="数据论文出版期刊名称">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
                 
                 <div class="form-row section-title">服务信息</div>
                 <div class="form-row">
                     <label for="paper_citation">引用格式:</label>
-                    <input type="text" id="paper_citation" placeholder="数据论文的引用格式">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_citation" placeholder="数据论文的引用格式">
+                        <span class="status-icon status-check">✓</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_download_url">下载地址:</label>
-                    <input type="text" id="paper_download_url" placeholder="数据论文在互联网的下载地址">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_download_url" placeholder="数据论文在互联网的下载地址">
+                        <span class="status-icon status-question">?</span>
+                    </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_license">共享许可协议:</label>
-                    <input type="text" id="paper_license" placeholder="数据论文的共享许可协议">
+                    <div style="display: flex; align-items: center;">
+                        <input type="text" id="paper_license" placeholder="数据论文的共享许可协议">
+                        <span class="status-icon status-cross">✗</span>
+                    </div>
                 </div>
+
+                
             </div>
 
             <div class="form-row">
