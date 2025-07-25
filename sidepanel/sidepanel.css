@@ -157,3 +157,186 @@ h1 {
         grid-column: 1;
     }
 }
+
+/* 元数据分组样式 */
+.metadata-group {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+}
+
+/* 子组样式 - 缩进显示 */
+.subgroup {
+    margin-left: 16px;
+    border-color: #d0d0d0;
+    background-color: #fafafa;
+}
+
+/* 分组标题样式 */
+.metadata-group h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #202124;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.metadata-group h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* 调整下载按钮位置 */
+#downloadButton {
+    margin-top: 8px;
+}
+
+/* 切换按钮组样式 */
+.toggle-group {
+    display: flex;
+    gap: 4px;
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 6px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.toggle-btn.active {
+    background-color: #4d90fe;
+    color: white;
+    border-color: #4d90fe;
+}
+
+.toggle-btn:hover:not(.active) {
+    background-color: #e8e8e8;
+}
+
+/* 区块标题样式 */
+.section-title {
+    font-weight: 600;
+    color: #333;
+    padding: 8px 0 4px 0;
+    margin-top: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 调整表单行样式使布局更密集 */
+.form-row {
+    margin-bottom: 6px;
+}
+
+.metadata-section {
+    width: 100%;
+}
+
+/* 切换按钮组样式 */
+.toggle-group {
+    display: flex;
+    gap: 4px;
+    margin: 0 0 16px 0;
+    width: 100%;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 6px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.toggle-btn.active {
+    background-color: #4d90fe;
+    color: white;
+    border-color: #4d90fe;
+}
+
+.toggle-btn:hover:not(.active) {
+    background-color: #e8e8e8;
+}
+
+/* 区块标题样式 */
+.section-title {
+    font-weight: 600;
+    color: #333;
+    padding: 8px 0 4px 0;
+    margin-top: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 调整表单行样式使布局更密集 */
+.form-row {
+    margin-bottom: 6px;
+}
+
+.metadata-section {
+    width: 100%;
+}
+
+/* 修改form-row样式，确保标签和输入框在同一行并减少间距 */
+.form-row {
+    display: flex;          /* 使用flex布局替代grid，更灵活控制行内元素 */
+    align-items: center;    /* 垂直居中对齐 */
+    width: 100%;
+    margin-bottom: 6px;     /* 减少行间距 */
+    min-height: 32px;       /* 最小高度，避免内容溢出 */
+}
+
+/* 标签样式调整 */
+.form-row label {
+    flex: 0 0 110px;        /* 固定标签宽度，不伸缩 */
+    font-size: 12px;
+    text-align: right;
+    padding-right: 8px;
+    margin-bottom: 0;       /* 移除底部边距 */
+    white-space: nowrap;    /* 防止标签换行 */
+}
+
+/* 输入框样式调整 */
+.form-row input {
+    flex: 1;                /* 输入框占剩余空间 */
+    padding: 4px 8px;       /* 减少内边距，降低高度 */
+    font-size: 12px;        /* 缩小字体 */
+    height: 24px;           /* 固定输入框高度 */
+    margin-bottom: 0;       /* 移除底部边距 */
+}
+
+/* 区块标题样式调整 */
+.section-title {
+    padding: 4px 0;         /* 减少标题内边距 */
+    margin: 8px 0 4px 0;    /* 调整标题间距 */
+    font-size: 13px;
+}
+
+/* 整体容器内边距调整 */
+.source-code-container,
+.metadata-container {
+    padding: 10px;          /* 减少容器内边距 */
+}
+
+/* 按钮样式调整 */
+#downloadButton {
+    padding: 6px;           /* 减少按钮内边距 */
+    height: 28px;           /* 降低按钮高度 */
+    font-size: 12px;        /* 缩小按钮字体 */
+    margin-top: 4px;
+}
