@@ -146,7 +146,6 @@ h1 {
 @media (max-width: 400px) {
     .form-row {
         grid-template-columns: 1fr; /* 单列布局 */
-        gap: 6px;
     }
     label {
         text-align: left;
@@ -318,6 +317,14 @@ h1 {
     font-size: 12px;        /* 缩小字体 */
     height: 24px;           /* 固定输入框高度 */
     margin-bottom: 0;       /* 移除底部边距 */
+}
+
+/* 展示文本样式 */
+.value-display {
+    flex: 1;                /* 占剩余空间 */
+    padding: 4px 8px;       /* 与原输入框保持一致的内边距 */
+    font-size: 12px;        /* 与原输入框保持一致的字体大小 */
+    word-break: break-all;  /* 长文本自动换行 */
 }
 
 /* 区块标题样式调整 */

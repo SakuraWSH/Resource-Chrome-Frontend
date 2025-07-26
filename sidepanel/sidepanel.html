@@ -15,7 +15,7 @@
         </div>
         
         <div class="metadata-container">
-            <h2>元数据编辑</h2>
+            <h2>元数据展示</h2>
             
             <!-- 格式切换按钮组 -->
             <div class="toggle-group">
@@ -46,84 +46,84 @@
                 <div class="form-row">
                     <label for="identifier">标识符:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="identifier" placeholder="科技资源的唯一标识编码">
+                        <span id="identifier" class="value-display">KXY-2023-001</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="name">资源名称:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="name" placeholder="科技资源的名称">
+                        <span id="name" class="value-display">中国气象观测数据集（2020-2023）</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="description">描述:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="description" placeholder="科技资源内容的概要介绍">
+                        <span id="description" class="value-display">包含2020至2023年中国各地区气象观测数据，包括温度、湿度、降水量等指标</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="keyword">关键词:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="keyword" placeholder="科技资源的关键词">
+                        <span id="keyword" class="value-display">气象,观测数据,温度,降水量,中国</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="dataofcreate">生成日期:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="dataofcreate" placeholder="科技资源的生成日期">
+                        <span id="dataofcreate" class="value-display">2023-06-15</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="dateregister">注册日期:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="dateregister" placeholder="科技资源的获得标识符的日期">
+                        <span id="dateregister" class="value-display">2023-07-01</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="dataoflast">最新发布日期:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="dataoflast" placeholder="最近一次发布更新的日期">
+                        <span id="dataoflast" class="value-display">2023-12-20</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="discipline">学科分类:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="discipline" placeholder="科技资源所属的学科分类">
+                        <span id="discipline" class="value-display">大气科学</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="theme">主题分类:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="theme" placeholder="科技资源的领域来源应用分类">
+                        <span id="theme" class="value-display">气象观测</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="ipcategory">知识产权类别:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="ipcategory" placeholder="完全知识产权/他人知识产权等">
+                        <span id="ipcategory" class="value-display">完全知识产权</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="permission">资源使用许可:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="permission" placeholder="转让/传播/署名/修改等">
+                        <span id="permission" class="value-display">署名-非商业性使用-禁止演绎</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="resourceurl">资源访问地址:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="resourceurl" placeholder="科技资源的网络访问地址">
+                        <span id="resourceurl" class="value-display">https://data.meteo.gov.cn/dataset/2020-2023</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
@@ -133,21 +133,21 @@
                 <div class="form-row">
                     <label for="sharemethod">共享途径:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="sharemethod" placeholder="线上共享/线下共享/线上线下共享">
+                        <span id="sharemethod" class="value-display">线上共享</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="sharerange">共享范围:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="sharerange" placeholder="不共享/有条件共享/无条件共享">
+                        <span id="sharerange" class="value-display">有条件共享</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="applyprocess">申请流程:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="applyprocess" placeholder="获取资源的必备程序">
+                        <span id="applyprocess" class="value-display">在线提交申请，审核通过后获取访问权限</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
@@ -157,49 +157,49 @@
                 <div class="form-row">
                     <label for="provider">提供方名称:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="provider" placeholder="提供科技资源的组织名称">
+                        <span id="provider" class="value-display">国家气象数据中心</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="provideraddr">详细地址:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="provideraddr" placeholder="提供方的详细联系地址">
+                        <span id="provideraddr" class="value-display">北京市海淀区中关村南大街46号</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="providerzip">邮政编码:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="providerzip" placeholder="与通信地址对应的邮政编码">
+                        <span id="providerzip" class="value-display">100081</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="providercontact">联系人:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="providercontact" placeholder="提供方的联系人姓名">
+                        <span id="providercontact" class="value-display">张明</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="providertel">联系电话:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="providertel" placeholder="提供方的联系电话">
+                        <span id="providertel" class="value-display">010-12345678</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="provideremail">电子邮箱:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="provideremail" placeholder="提供方的电子邮箱地址">
+                        <span id="provideremail" class="value-display">data@meteo.gov.cn</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="providerwebsite">网站:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="providerwebsite" placeholder="提供方的官方网站地址">
+                        <span id="providerwebsite" class="value-display">https://www.meteo.gov.cn</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
@@ -209,49 +209,49 @@
                 <div class="form-row">
                     <label for="server">服务方名称:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="server" placeholder="服务方的组织名称">
+                        <span id="server" class="value-display">中国气象科学数据共享服务网</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="serveraddr">详细地址:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="serveraddr" placeholder="服务方的详细联系地址">
+                        <span id="serveraddr" class="value-display">北京市海淀区中关村南大街5号</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="serverzip">邮政编码:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="serverzip" placeholder="与通信地址对应的邮政编码">
+                        <span id="serverzip" class="value-display">100080</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="servercontact">联系人:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="servercontact" placeholder="服务方的联系人姓名">
+                        <span id="servercontact" class="value-display">李华</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="servertel">联系电话:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="servertel" placeholder="服务方的联系电话">
+                        <span id="servertel" class="value-display">010-87654321</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="serveremail">电子邮箱:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="serveremail" placeholder="服务方的电子邮箱地址">
+                        <span id="serveremail" class="value-display">service@meteodata.cn</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="serverwebsite">网站:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="serverwebsite" placeholder="服务方的官方网站地址">
+                        <span id="serverwebsite" class="value-display">https://data.cma.cn</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
@@ -281,28 +281,28 @@
                 <div class="form-row">
                     <label for="dataset_identifier">标识符:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="dataset_identifier" placeholder="数据集的唯一标识编码">
+                        <span id="dataset_identifier" class="value-display">DS-2023-0056</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="dataset_title">标题:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="dataset_title" placeholder="数据集公开的标题">
+                        <span id="dataset_title" class="value-display">2020-2023年中国地面气象观测数据集</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="dataset_abstract">摘要:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="dataset_abstract" placeholder="数据集的简要介绍">
+                        <span id="dataset_abstract" class="value-display">本数据集包含2020年1月至2023年12月中国31个省市自治区的地面气象观测数据，包括每日平均温度、最高温度、最低温度、降水量、湿度等气象要素。</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="dataset_keyword">关键词:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="dataset_keyword" placeholder="数据集的关键词">
+                        <span id="dataset_keyword" class="value-display">地面气象,观测数据,温度,降水量,中国,2020-2023</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
@@ -312,14 +312,14 @@
                 <div class="form-row">
                     <label for="time_range">时间范围:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="time_range" placeholder="数据集的时间范围">
+                        <span id="time_range" class="value-display">2020-01-01 至 2023-12-31</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="space_range">空间范围:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="space_range" placeholder="数据集的空间范围">
+                        <span id="space_range" class="value-display">中国境内（北纬18°-53°，东经73°-135°）</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
@@ -328,35 +328,35 @@
                 <div class="form-row">
                     <label for="language">语种:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="language" placeholder="数据集的描述语言">
+                        <span id="language" class="value-display">中文,英文</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="file_content">文件内容:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="file_content" placeholder="数据集包括的文件数和具体文件内容">
+                        <span id="file_content" class="value-display">包含1460个每日数据文件，12个月度汇总文件，4个年度报告文件，数据字典1份</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="fund_project">基金项目:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="fund_project" placeholder="数据集的项目或基金支持">
+                        <span id="fund_project" class="value-display">国家自然科学基金项目（41975012）</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="data_volume">数据量:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="data_volume" placeholder="数据集所占的物理存储空间大小">
-                        <span class="status-icon status-check">✓</span>
+                        <span id="data_volume" class="value-display">约2.5GB</span>
+                        <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="data_format">数据格式:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="data_format" placeholder="数据集的文件格式">
+                        <span id="data_format" class="value-display">CSV, Excel, PDF</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
@@ -365,35 +365,35 @@
                 <div class="form-row">
                     <label for="author_name">作者姓名:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="author_name" placeholder="数据集的作者姓名">
+                        <span id="author_name" class="value-display">王建国, 刘文静, 张强</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="work_unit">工作单位:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="work_unit" placeholder="数据集作者所属单位">
+                        <span id="work_unit" class="value-display">中国科学院大气物理研究所</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="author_email">电子邮箱:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="author_email" placeholder="数据集作者的电子邮箱地址">
+                        <span id="author_email" class="value-display">wangjg@iap.ac.cn</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="work_contribution">工作贡献:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="work_contribution" placeholder="数据集作者的工作贡献">
+                        <span id="work_contribution" class="value-display">王建国：数据采集与整理；刘文静：数据质量控制；张强：数据集整体设计</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="author_bio">作者简介:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="author_bio" placeholder="数据集作者的简要介绍">
+                        <span id="author_bio" class="value-display">王建国，研究员，主要从事气象数据处理与分析研究；刘文静，副研究员，从事数据质量控制研究；张强，教授，大气物理学专家。</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
@@ -402,21 +402,21 @@
                 <div class="form-row">
                     <label for="publish_date">发布日期:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="publish_date" placeholder="数据集公开发布的时间">
+                        <span id="publish_date" class="value-display">2024-01-15</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="publish_journal">出版期刊:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="publish_journal" placeholder="数据集关联出版的数据期刊名称">
+                        <span id="publish_journal" class="value-display">中国科学数据</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="version_info">版本信息:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="version_info" placeholder="数据集的版本信息">
+                        <span id="version_info" class="value-display">V1.0</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
@@ -425,35 +425,35 @@
                 <div class="form-row">
                     <label for="citation_format">引用格式:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="citation_format" placeholder="数据集的引用格式">
+                        <span id="citation_format" class="value-display">王建国, 刘文静, 张强. 2020-2023年中国地面气象观测数据集[DS]. 中国科学院大气物理研究所, 2024. DOI:10.1234/data.2024.0056</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="license_agreement">共享许可协议:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="license_agreement" placeholder="数据集的共享许可协议">
+                        <span id="license_agreement" class="value-display">CC BY-NC-SA 4.0</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="usage_statement">使用声明:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="usage_statement" placeholder="数据集使用遵循的规则">
+                        <span id="usage_statement" class="value-display">本数据集仅供非商业研究使用，使用时需注明来源并引用相关文献</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="download_url">下载地址:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="download_url" placeholder="数据集在互联网的下载地址">
+                        <span id="download_url" class="value-display">https://data.iap.ac.cn/dataset/2020-2023_meteo</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_url">数据论文访问地址:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_url" placeholder="以数据集为核心出版的论文的访问地址">
+                        <span id="paper_url" class="value-display">https://journal.csdata.org/article/2024/12345.html</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
@@ -482,45 +482,46 @@
                 <div class="form-row">
                     <label for="paper_identifier">标识符:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_identifier" placeholder="数据论文的唯一标识编码">
+                        <span id="paper_identifier" class="value-display">PAP-2024-0089</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_title">标题:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_title" placeholder="数据论文的标题">
+                        <span id="paper_title" class="value-display">2020-2023年中国地面气象观测数据集的构建与分析</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_abstract">摘要:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_abstract" placeholder="数据论文的简要介绍">
+                        <span id="paper_abstract" class="value-display">本文介绍了2020-2023年中国地面气象观测数据集的构建过程、数据内容、质量控制方法及初步分析结果。该数据集包含全国31个省市的逐日气象观测数据，可为气候变化研究提供重要基础数据支持。</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_keyword">关键词:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_keyword" placeholder="数据论文的关键词">
+                        <span id="paper_keyword" class="value-display">气象数据,数据集,气候变化,地面观测,中国</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 
+
                 <!-- 包含数据集基本信息 -->
                 <div class="form-row section-title">关联数据集信息</div>
                 <div class="form-row">
                     <label for="related_dataset_id">数据集标识符:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="related_dataset_id" placeholder="关联数据集的唯一标识编码">
+                        <span id="related_dataset_id" class="value-display">DS-2023-0056</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="related_dataset_title">数据集标题:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="related_dataset_title" placeholder="关联数据集的公开标题">
+                        <span id="related_dataset_title" class="value-display">2020-2023年中国地面气象观测数据集</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
@@ -529,49 +530,49 @@
                 <div class="form-row">
                     <label for="introduction">引言:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="introduction" placeholder="数据论文的引言部分">
+                        <span id="introduction" class="value-display">气象观测数据是研究气候变化、开展气象服务的基础。本文介绍的2020-2023年中国地面气象观测数据集整合了全国范围内的气象站观测数据，经过严格的质量控制，可为相关研究提供高质量的数据支持。</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="methodology">数据采集和处理方法:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="methodology" placeholder="数据论文的数据采集和处理方法">
+                        <span id="methodology" class="value-display">数据来源于全国2400余个国家级气象观测站，采用自动观测与人工校验相结合的方式，通过质量控制算法剔除异常值，采用插值法填补缺失数据。</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="sample_desc">数据样本描述:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="sample_desc" placeholder="描述数据集的典型样本来源数据结构等">
+                        <span id="sample_desc" class="value-display">数据集包含每日温度、湿度、气压、降水量等要素，以站点为单位存储，每个站点数据包括经纬度、海拔高度等基本信息及观测要素时间序列。</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="quality_control">数据质量控制:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="quality_control" placeholder="数据质量控制方法和验证过程">
+                        <span id="quality_control" class="value-display">采用三级质量控制：自动检测（范围检查、逻辑检查、一致性检查）、人工审核、与历史数据对比验证，数据完整率达98.7%。</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="usage_suggestion">数据使用方法建议:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="usage_suggestion" placeholder="数据集的使用方法和建议">
+                        <span id="usage_suggestion" class="value-display">建议用于气候变化趋势分析、极端天气事件研究等领域，使用前请参考数据说明文档了解各要素的具体定义和单位。</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="references">参考文献:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="references" placeholder="数据论文引用的参考文献列表">
+                        <span id="references" class="value-display">1. 中国气象局. 地面气象观测规范. 北京: 气象出版社, 2020. 2. Wang J, et al. (2022) A study on quality control methods for surface meteorological data. Journal of Meteorological Research, 36(2): 189-203.</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="acknowledgements">致谢:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="acknowledgements" placeholder="数据论文的致谢部分">
+                        <span id="acknowledgements" class="value-display">感谢国家自然科学基金项目（41975012）的资助，感谢全国各气象观测站工作人员的数据采集工作。</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
@@ -580,21 +581,21 @@
                 <div class="form-row">
                     <label for="paper_author_name">作者姓名:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_author_name" placeholder="数据论文作者的姓名">
+                        <span id="paper_author_name" class="value-display">王建国, 刘文静, 张强, 陈明</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_author_unit">工作单位:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_author_unit" placeholder="数据论文作者所属单位">
+                        <span id="paper_author_unit" class="value-display">中国科学院大气物理研究所, 中国气象科学研究院</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_author_email">电子邮箱:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_author_email" placeholder="数据论文作者的电子邮箱地址">
+                        <span id="paper_author_email" class="value-display">wangjg@iap.ac.cn, liuwj@cma.gov.cn</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
@@ -603,35 +604,35 @@
                 <div class="form-row">
                     <label for="receive_date">收稿日期:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="receive_date" placeholder="数据论文的收稿日期">
+                        <span id="receive_date" class="value-display">2024-02-10</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="review_date">同评日期:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="review_date" placeholder="数据论文的同行评审日期">
+                        <span id="review_date" class="value-display">2024-03-15</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="accept_date">录用日期:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="accept_date" placeholder="数据论文的录用日期">
+                        <span id="accept_date" class="value-display">2024-04-05</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_publish_date">出版日期:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_publish_date" placeholder="数据论文的出版日期">
+                        <span id="paper_publish_date" class="value-display">2024-06-20</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_journal">出版期刊:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_journal" placeholder="数据论文出版期刊名称">
+                        <span id="paper_journal" class="value-display">中国科学数据</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
@@ -640,30 +641,26 @@
                 <div class="form-row">
                     <label for="paper_citation">引用格式:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_citation" placeholder="数据论文的引用格式">
+                        <span id="paper_citation" class="value-display">王建国, 刘文静, 张强, 等. 2020-2023年中国地面气象观测数据集的构建与分析[J]. 中国科学数据, 2024, 9(2): 123-135. DOI:10.1234/csdata.2024.02.123</span>
                         <span class="status-icon status-check">✓</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_download_url">下载地址:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_download_url" placeholder="数据论文在互联网的下载地址">
+                        <span id="paper_download_url" class="value-display">https://journal.csdata.org/article/download/12345/6789</span>
                         <span class="status-icon status-question">?</span>
                     </div>
                 </div>
                 <div class="form-row">
                     <label for="paper_license">共享许可协议:</label>
                     <div style="display: flex; align-items: center;">
-                        <input type="text" id="paper_license" placeholder="数据论文的共享许可协议">
+                        <span id="paper_license" class="value-display">CC BY 4.0</span>
                         <span class="status-icon status-cross">✗</span>
                     </div>
                 </div>
 
                 
-            </div>
-
-            <div class="form-row">
-                <button id="downloadButton">下载JSON</button>
             </div>
         </div>
     </div>
